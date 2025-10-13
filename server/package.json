@@ -1,0 +1,22 @@
+{
+    "name": "quick-todo-server",
+    "type": "module",
+    "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "start": "node --env-file=.env --enable-source-maps --loader tsx src/index.ts"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "path": "^0.12.7",
+        "promises": "^0.2.5",
+        "quick-todo": "file:..",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.3",
+        "tsx": "^4.19.2",
+        "typescript": "^5.5.4"
+    }
+}

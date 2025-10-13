@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* optional tweaks */
+:root { color-scheme: light dark; }
+body { @apply bg-gray-50 text-gray-900; }
