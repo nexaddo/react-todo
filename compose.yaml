@@ -1,0 +1,17 @@
+services:
+  server:
+    build: ./server
+    ports:
+      - "3000:3000"
+    environment:
+      - CLIENT_ORIGIN=http://localhost:5173
+    volumes:
+      - server-data:/app/server/data
+  client:
+    build: ./client
+    ports:
+      - "5173:80"
+    depends_on:
+      - server
+volumes:
+  server-data: {}
