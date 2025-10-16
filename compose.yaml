@@ -1,10 +1,10 @@
 services:
   server:
     build: ./server
+    env_file:
+      - ./server/.env
     ports:
       - "3000:3000"
-    environment:
-      - CLIENT_ORIGIN=http://localhost:5173
     volumes:
       - server-data:/app/server/data
   client:
