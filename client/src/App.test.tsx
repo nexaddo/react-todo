@@ -12,7 +12,6 @@ vi.mock('./api', () => ({
     reorderTodos: (ids: string[]) => Promise.resolve(ids.map((id, i) => ({ id, order: i, createdAt: Date.now(), text: 'X', completed: false, dueAt: null, tags: [] })))
 }))
 
-
 test('adds a todo', async () => {
     render(<App />)
     const input = await screen.findByPlaceholderText(/what needs doing/i)
