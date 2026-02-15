@@ -8,7 +8,7 @@
         "test:watch": "vitest --watch"
     },
     "dependencies": {
-        "cors": "^2.8.5",
+        "cors": "^2.8.6",
         "express": "^4.19.2",
         "path": "^0.12.7",
         "promises": "^0.2.5",
